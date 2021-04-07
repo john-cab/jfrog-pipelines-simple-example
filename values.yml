@@ -1,5 +1,5 @@
 resources:
-  - name: myGitRepo
+  - name: JohnCabGitRepo
     type: GitRepo
     configuration:
       gitProvider: john_cab_github
