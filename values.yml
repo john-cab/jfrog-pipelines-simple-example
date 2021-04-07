@@ -6,7 +6,6 @@ resources:
       path: john-cab/jfrog-pipelines-simple-example
       branches:
         include: master
-
   pipelines:
   - name: john_cab_app_pipeline
     configuration:
