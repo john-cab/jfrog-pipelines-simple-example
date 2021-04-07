@@ -18,5 +18,7 @@ pipelines:
         InputResources:
           - name: JohnCabGitRepo
         execution:
-          onExecute:
+          onStart:
             - echo "Hello Wolrd 1"
+          onComplete:
+            - echo "Goodbye World 1"
