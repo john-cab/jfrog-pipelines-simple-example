@@ -13,7 +13,7 @@ pipelines:
         readOnly:
            MY_MESSAGE: '"Hello-World"'
     steps:
-      - name: step-1
+      - name: step1
         type: Bash
         configuration:
           inputResources:
