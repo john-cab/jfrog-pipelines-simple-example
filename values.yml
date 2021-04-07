@@ -6,3 +6,21 @@ resources:
       path: john-cab/jfrog-pipelines-simple-example
       branches:
         include: master
+
+  pipelines:
+  - name: john_cab_app_pipeline
+    configuration:
+      environmentVariables:
+        readOnly:
+           my_env_var: '1.0.$run_number'
+           ArtIP: $(echo ${int_ArtifactoryUnified_url}|awk -F '/' '{print $3}'|awk -F ':' '{print $1}')
+           
+
+    steps:
+      - name: bld_backend
+        type: Bash
+        InputResources:
+          - name: myGitRepo
+        execution:
+          onExecute:
+            - echo "Hello Wolrd 1"
