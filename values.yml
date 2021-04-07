@@ -8,8 +8,3 @@ resources:
         include: master
 pipelines:
   - name: john_cab_app_pipeline
-    configuration:
-      environmentVariables:
-        readOnly:
-           my_env_var: '1.0.$run_number'
-           ArtIP: $(echo ${int_ArtifactoryUnified_url}|awk -F '/' '{print $3}'|awk -F ':' '{print $1}')
