@@ -3,7 +3,7 @@ resources:
     type: GitRepo
     configuration:
       gitProvider: john_cab_github
-      path: john-cab/jfrog-pipelines-simple-example
+      path: john-cab/jfrog-pipelines-simple-newv2
       branches:
         include: master
 pipelines:
@@ -18,8 +18,8 @@ pipelines:
         configuration:
           inputResources:
             - name: JohnCabGitRepo
-          outputResources:
-            - name: JohnCabGitRepo_results
+#          outputResources:
+#            - name: JohnCabGitRepo_results
         execution:
           onStart:
             - echo "Hello Wolrd 1"
