@@ -3,7 +3,7 @@ resources:
     type: GitRepo
     configuration:
       gitProvider: john_cab_github
-      path: john-cab/jfrog-pipelines-simple-example2
+      path: john-cab/jfrog-pipelines-simple-example
       branches:
         include: master
 pipelines:
