@@ -18,8 +18,8 @@ pipelines:
         configuration:
           inputResources:
             - name: JohnCabGitRepo
-          outputResources:
-            - name: JohnCabGitRepo_results
+#          outputResources:
+#            - name: JohnCabGitRepo_results
         execution:
           onStart:
             - echo "Hello Wolrd 1"
