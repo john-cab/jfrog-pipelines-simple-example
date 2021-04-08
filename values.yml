@@ -7,7 +7,7 @@ resources:
       branches:
         include: master
 pipelines:
-  - name: john_cab_app_pipeline  
+  - name: john_cab_app_pipeline_newexample  
     configuration:
       environmentVariables:
         readOnly:
@@ -18,8 +18,8 @@ pipelines:
         configuration:
           inputResources:
             - name: JohnCabGitRepo
-          outputResources:
-            - name: JohnCabGitRepo_results
+#          outputResources:
+#            - name: JohnCabGitRepo_results
         execution:
           onStart:
             - echo "Hello Wolrd 1"
