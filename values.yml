@@ -11,12 +11,14 @@ pipelines:
     configuration:
       environmentVariables:
         readOnly:
-           MY_MESSAGE: '"Hello-World"'
+           MY_MESSAGE: '"Hello-World-2"'
     steps:
       - name: step1
         type: Bash
         configuration:
           inputResources:
+            - name: JohnCabGitRepo
+          outputResources:
             - name: JohnCabGitRepo
         execution:
           onStart:
